@@ -105,9 +105,11 @@ body{
 			// }
 
 			/*socialクラスの中にあるaタグを修飾（afterとbeforeの二つの修飾を作成）
-			afterが
+			beforerの修飾要素を最初は表示領域にあり、mouse hoverで状態変更があった場合非表示領域に寄せるれる要素とし、
+			afterの修飾要素を最初は非表示領域にあり、mouse hoverで状態変更があった場合表示領域に寄せるれる要素とする。
 			*/ 
 			// aタグのリンクの（テキスト設定でfont-sizeを０にしているためaタグのテキストは見えない）
+			// .social a:before,	.social a:afterで共有している部分をここで定義する。
 			.social a:before,
 			.social a:after {
 				// リンククリック判定の範囲設定
